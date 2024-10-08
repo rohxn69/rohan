@@ -3,91 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Rohan - GitHub Style</title>
+    <title>Your Name - GitHub</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d1117;
-            color: #c9d1d9;
         }
-        .navbar {
-            background-color: #161b22;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #444;
         }
-        .navbar h1 {
-            color: white;
+        h1 {
             margin: 0;
-            font-size: 24px;
         }
-        .navbar a {
-            color: #58a6ff;
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #f5f5f5;
             text-decoration: none;
-            font-size: 16px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #21262d;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            font-size: 36px;
-            color: #58a6ff;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        code {
-            background-color: #ffffff1a;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        .btn {
-            background-color: #238636;
-            color: white;
-            padding: 10px 15px;
+            margin: 0 1rem;
+            padding: 0.5rem;
             border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
         }
-        .btn:hover {
-            background-color: #2ea043;
+        nav a:hover {
+            background-color: #333;
+        }
+        .content {
+            padding: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            color: #6a737d;
-            font-size: 14px;
+            padding: 1rem 0;
+            border-top: 1px solid #444;
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <h1>Rohan's Repository</h1>
-        <a href="#">Sign in</a>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a short description about yourself here. You can mention your skills, interests, and what you are currently working on.</p>
+            <img src="https://source.unsplash.com/600x400/?nature,water" alt="Open Source Image">
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1 - A brief description of your project.</li>
+                <li>Project 2 - A brief description of your project.</li>
+                <li>Project 3 - A brief description of your project.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out through the contact methods you prefer.</p>
+        </section>
     </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <h2>Welcome to Rohan's GitHub!</h2>
-        <p>This is your personal space to showcase your projects. Use <code>Markdown</code> to format your text, and organize your code effectively.</p>
-        <a href="#" class="btn">Explore Projects</a>
-    </div>
-
-    <!-- Footer -->
     <footer>
-        © 2024 Rohan's GitHub. All rights reserved.
+        <p>&copy; 2024 Your Name</p>
     </footer>
 </body>
 </html>
