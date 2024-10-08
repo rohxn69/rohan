@@ -1,103 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Rohan - GitHub Style</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0d1117;
-            color: #c9d1d9;
-        }
-        .navbar {
-            background-color: #161b22;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .navbar h1 {
-            color: white;
-            margin: 0;
-            font-size: 24px;
-        }
-        .navbar a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #21262d;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: relative; /* Added for positioning */
-        }
-        .name-box {
-            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for shade */
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h2 {
-            font-size: 36px;
-            color: #58a6ff;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        code {
-            background-color: #ffffff1a;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        .btn {
-            background-color: #238636;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #2ea043;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #6a737d;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rohan's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #c9d1d9;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #58a6ff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .section-title {
+      font-size: 28px;
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+    .about, .projects {
+      margin-bottom: 40px;
+    }
+    .projects .project-item {
+      background-color: #21262d;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #161b22;
+      color: #8b949e;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .fa-github {
+      color: #58a6ff;
+      margin-right: 10px;
+    }
+    .fa-link {
+      color: #58a6ff;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <h1>Rohan's Repository</h1>
-        <a href="#">Sign in</a>
-    </div>
+  <header>
+    <h1>ROHAN</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="name-box">
-            <h2>Rohan</h2>
-        </div>
-        <a href="#" class="btn">Explore Projects</a>
-    </div>
+  <div class="container">
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hi, I'm Rohan, a passionate software developer specializing in building impactful web applications.
+        I have experience with a wide range of technologies, including JavaScript, Python, and React.
+        I love contributing to open source projects and am always excited to collaborate on new challenges.
+      </p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        © 2024 Rohan's GitHub. All rights reserved.
-    </footer>
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-item">
+        <h3>Project 1 - Awesome Web App</h3>
+        <p>This web app does XYZ. It was built using React and Node.js. </p>
+        <a href="https://github.com/rohan/project1" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://project1.com" target="_blank"><i class="fas fa-link"></i>Live Demo</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Project 2 - Cool API Service</h3>
+        <p>This API provides ABC services, developed with Python and Flask. </p>
+        <a href="https://github.com/rohan/project2" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://project2.com" target="_blank"><i class="fas fa-link"></i>Live Demo</a>
+      </div>
+    </section>
+  </div>
+
+  <footer id="contact">
+    <p>Connect with me on <a href="https://github.com/rohan" target="_blank"><i class="fab fa-github"></i>GitHub</a></p>
+  </footer>
 </body>
 </html>
